@@ -1,0 +1,101 @@
+/* styles.css */
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(index.jpg);
+    background-size: cover;
+}
+
+.container {
+    background-color: rgb(222, 222, 222);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    background-color: #4388cd;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 5px;
+}
+
+.form-toggle button:hover {
+    background-color:  #0b6ccd;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#4388cd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b6ccd;
+}
+
+#loginMessage, #signupMessage {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
+.details {
+    padding-top: 700px;
+    align-items: center;
+}

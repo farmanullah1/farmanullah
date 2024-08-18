@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button id="loginToggle" onclick="showLogin()">Login</button>
+                <button id="signupToggle" onclick="showSignUp()">Sign Up</button>
+            </div>
+            <form id="loginForm" class="form">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <div id="loginMessage"></div>
+            </form>
+            <form id="signupForm" class="form hidden">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div id="signupMessage"></div>
+            </form>
+        </div>
+    </div>
+    <div class="details"><h6>Username : user</h6><br>
+    <h6>password : password</h6></div>
+    <script src="script2.js"></script>
+</body>
+</html>
